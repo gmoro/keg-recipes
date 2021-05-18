@@ -6,10 +6,14 @@ config:
     gce-config:
       - path: /etc/boto.cfg
         append: True
-        content: "  ca_certificates_file = system"
+        content: |-
+          [Boto]
+          ca_certificates_file = system
       - path: /etc/boto.cfg.template
         append: True
-        content: "  ca_certificates_file = system"
+        content: |-
+          [Boto]
+          ca_certificates_file = system
       - path: /etc/default/instance_configs.cfg.distro
         append: True
         content: |-
