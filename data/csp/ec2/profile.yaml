@@ -1,5 +1,6 @@
 profile:
   parameters:
+    firmware: efi
     kernelcmdline:
       8250.nr_uarts: 4
       dis_ucode_ldr: []
