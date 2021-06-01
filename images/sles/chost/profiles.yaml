@@ -7,15 +7,19 @@ profiles:
     description: Alibaba Cloud configuration
     include:
       - csp/aliyun
+      - kernel-options/cgroup-memory
   Azure:
     description: Azure configuration
     include:
-      - csp/azure
+      - csp/azure/addon/chost-tweaks
+      - kernel-options/cgroup-memory
   EC2-HVM:
     description: EC2 HVM configuration
     include:
       - csp/ec2
+      - kernel-options/cgroup-memory
   GCE:
     description: GCE configuration
     include:
       - csp/gce
+      - kernel-options/cgroup-memory
