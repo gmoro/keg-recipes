@@ -1,6 +1,7 @@
 config:
   scripts:
     gce-config:
+      - ssh-disable-challenge-response-auth
       - ssh-disable-password-login
   files:
     gce-config:
@@ -29,7 +30,6 @@ config:
         value: "yes"
   services:
     gce-services:
-      - chronyd
       - google-guest-agent
       - google-osconfig-agent
       - google-oslogin-cache.timer

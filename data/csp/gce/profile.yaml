@@ -7,4 +7,3 @@ profile:
       console: ttyS0,38400n8
       dis_ucode_ldr: []
       multipath: "off"
-      swapaccount: 1
