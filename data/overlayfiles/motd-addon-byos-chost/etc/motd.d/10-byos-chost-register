@@ -1,6 +1,3 @@
-{OS_PRETTY_NAME} {ARCH} (64-bit)
-Optimized as Container Host
-
 If you desire in place updates of the host please register this instance
 using your existing SUSE entitlement.
 
@@ -13,8 +10,3 @@ to register the instance with SCC
 Without registration this instance does not have access to updates and
 security fixes.
 
-Management and Config: https://www.suse.com/suse-in-the-cloud-basics
-Documentation: https://www.suse.com/documentation/sles-{OS_VERSION_MAJOR}
-Forum: https://forums.suse.com/categories/suse-public-cloud
-
-Have a lot of fun...
