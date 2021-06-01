@@ -1,4 +1,10 @@
 profile:
-  oemparameters:
+  parameters:
+    firmware: uefi
     kernelcmdline:
+      console: ttyS0,115200
+      clocksource: tsc
       crashkernel: ["232M,high", "80M,low"]
+      intel_pstate: "disable"
+      nohz: "off"
+      skew_tick: 1
