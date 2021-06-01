@@ -3,7 +3,6 @@ packages:
     azure:
       - cloud-init
       - cloud-init-config-suse
-      - cryptsetup
       - name: hyper-v
         arch: x86_64
       - name: kernel-default
@@ -11,6 +10,8 @@ packages:
       - name: shim
         arch: x86_64
       - python-azure-agent
+    azure-cryptsetup:
+      - cryptsetup
     azure-kernel:
       - name: kernel-default
         arch: x86_64
