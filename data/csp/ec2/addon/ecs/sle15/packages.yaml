@@ -6,7 +6,6 @@ packages:
       - blktrace
       - crash
       - cronie
-      - docker
       - docker-img-store-setup
       - ethtool
       - firewalld
@@ -22,9 +21,5 @@ packages:
       - polkit-default-privs
       - psmisc
       - quota
-      - release-notes-sles
       - rsync
       - tcpd
-  bootstrap:
-    ec2-product-ecs:
-      - sles-release

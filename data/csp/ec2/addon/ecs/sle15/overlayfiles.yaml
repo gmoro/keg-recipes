@@ -1,5 +1,4 @@
 overlayfiles:
-  motd:
+  motd-ecs:
     include:
       - motd-caption-ecs
-      - motd-default
