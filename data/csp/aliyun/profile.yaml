@@ -6,7 +6,7 @@ profile:
     vga: normal
     kernelcmdline:
       biosdevname: 0
-      console: ttyS0,115200n8
+      console: ["tty0", "ttyS0,115200n8"]
       multipath: "off"
       NON_PERSISTENT_DEVICE_NAMES: 1
   size: 20480
