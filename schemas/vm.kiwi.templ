@@ -47,16 +47,18 @@
         <keytable>us.map.gz</keytable>
         <timezone>UTC</timezone>
     </preferences>
+    {%- if data['users'] %}
     <users>
     {%- for user in data['users'] %}
         <user name="{{ user['name'] }}" groups="{{ ','.join(user['groups']) }}" password="{{ user['password'] }}" home="{{ user['home'] }}"/>
     {%- endfor %}
     </users>
+    {% endif -%}
     {% for profile, profile_data in data['profiles'].items() -%}
     {% if profile != 'common' and profile_data['profile'] -%}
     <preferences{%if multibuild %} profiles="{{ profile }}"{% endif %}>
-        <type {%- for key, val in profile_data['profile']['parameters'].items() -%}
-            {%- if val is mapping %} {{ key }}="{{ dict_to_param_string(val) }}" 
+        <type {% for key, val in profile_data['profile']['parameters'] | dictsort %}
+            {% if val is mapping %} {{ key }}="{{ dict_to_param_string(val) }}" 
             {%- else %} {{ key }}="{{ val }}"
             {%- endif -%}
             {%- endfor -%}>
