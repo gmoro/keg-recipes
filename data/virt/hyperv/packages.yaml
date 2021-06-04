@@ -1,0 +1,8 @@
+packages:
+  image:
+    hyperv:
+      - name: shim
+        arch: x86_64
+      - hyperv
+      - firewalld
+      - kernel-default-base

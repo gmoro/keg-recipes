@@ -1,0 +1,7 @@
+packages:
+  image:
+    openstack:
+      - name: shim
+        arch: x86_64
+      - qemu-guest-agent
+      - kernel-default-base

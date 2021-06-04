@@ -1,0 +1,25 @@
+profiles:
+  common:
+    description: Common
+    include:
+      - base/jeos
+  kvm-and-xen:
+    description: JeOS for KVM and Xen
+    include:
+      - virt/kvm-and-xen
+  VMware:
+    description: JeOS for VMware
+    include:
+      - virt/vmware
+  MS-HyperV:
+    description: JeOS for Hyper-V
+    include:
+      - virt/hyperv
+  OpenStack-Cloud:
+    description: JeOS for OpenStack Cloud
+    include:
+      - virt/openstack
+  RaspberryPi:
+    description: JeOS for the Raspberry Pi
+    include:
+      - hw/rpi

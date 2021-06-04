@@ -1,0 +1,18 @@
+packages:
+  image:
+    rpi:
+      - kernel-default
+      - name: raspberrypi-eeprom
+        arch: aarch64
+      - name: raspberrypi-firmware
+        arch: aarch64
+      - name: raspberrypi-firmware-config
+        arch: aarch64
+      - name: raspberrypi-firmware-dt
+        arch: aarch64
+      - dracut-kiwi-oem-repart
+      - jeos-firstboot-rpiwifi
+      - bcm43xx-firmware
+      - kernel-firmware
+      - name: u-boot-rpiarm64
+        arch: aarch64

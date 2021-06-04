@@ -1,0 +1,8 @@
+packages:
+  image:
+    btrfs:
+      - btrfsprogs
+      - btrfsmaintenance
+      - grub2-snapper-plugin
+      - snapper-zypp-plugin
+      - snapper

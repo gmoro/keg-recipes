@@ -1,0 +1,20 @@
+profile:
+  bootloader:
+    name: grub2
+  parameters:
+    image: vmx
+    filesystem: btrfs
+    format: qcow2
+    firmware: uefi
+    efipartsize: 33
+    kernelcmdline:
+      quiet: []
+      systemd.show_status: 1
+      console: ["ttyS0", "tty0"]
+      net.ifnames: 0
+    bootpartition: "false"
+    bootkernel: custom
+    devicepersistency: by-uuid
+    btrfs_quota_groups: "true"
+    btrfs_root_is_snapshot: "true"
+  size: 24576

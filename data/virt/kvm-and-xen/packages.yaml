@@ -1,0 +1,10 @@
+packages:
+  image:
+    kvm-xen:
+      - name: shim
+        arch: aarch64,x86_64
+      - xen-tools-domU
+      - xen-libs
+      - qemu-guest-agent
+      - firewalld
+      - kernel-default-base

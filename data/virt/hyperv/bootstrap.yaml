@@ -1,0 +1,4 @@
+packages:
+  bootstrap:
+    jeos:
+      - openSUSE-release-appliance-hyperv

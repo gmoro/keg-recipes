@@ -1,0 +1,5 @@
+packages:
+  image:
+    cloud-init:
+      - cloud-init
+      - cloud-init-config-suse

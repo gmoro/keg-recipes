@@ -1,0 +1,8 @@
+packages:
+  image:
+    vmware:
+      - name: shim
+        arch: x86_64
+      - open-vm-tools
+      - firewalld
+      - kernel-default-base

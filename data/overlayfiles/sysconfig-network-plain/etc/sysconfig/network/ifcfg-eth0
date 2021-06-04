@@ -1,3 +1,0 @@
-BOOTPROTO='dhcp'
-REMOTE_IPADDR=''
-STARTMODE='auto'

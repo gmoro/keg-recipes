@@ -1,0 +1,5 @@
+packages:
+  image:
+    firstboot:
+      - jeos-firstboot
+      - fbiterm

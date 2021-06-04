@@ -1,0 +1,9 @@
+include-prefix:
+  - base/jeos/tumbleweed
+image:
+  name: Tumbleweed-JeOS
+  specification: "Tumbleweed image"
+  version: 15.3
+repositories:
+  -
+    path: obsrepositories:/
